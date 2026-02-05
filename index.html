@@ -6,34 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Inter&display=swap" rel="stylesheet">
-  <link href="
-https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
-" rel="stylesheet" />
-  <link href="
-https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
-" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <title>Amigo Secreto</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <main>
+    <!--
     <img class="page__image" src="./assets/imagem-presente.png" alt="Imagem de um presente">
+    -->
     <div class="content">
-      <div class="content__corner-rectangle"></div>
       <div class="content__main">
         <section>
-          <h1 class="section__title">Amigo <span>Secreto</span></h1>
+          <h1 class="section__title">
+            <span class="material-symbols-rounded title__icon">redeem</span>
+            Amigo <span>Secreto</span>
+          </h1>
           <form class="form">
-            <label class="form__label">
+            <label class="form__label" for="nome-amigo">
               Digite o nome de um amigo
             </label>
-            <input id="nome-amigo" class="form__input" type="text" placeholder="Nome do amigo">
+            <input id="nome-amigo" class="form__input" type="text" placeholder="Ex: João da Silva">
             <div class="form__buttons">
-              <button onclick="adicionar()" type="button" class="button primary">Adicionar</button>
-              <button onclick="sortear()" type="button" class="button secondary">Sortear</button>
-              <a onclick="reiniciar()" href="#" class="form__link">Reiniciar</a>
+              <button onclick="adicionar()" type="button" class="button primary">
+                <span class="material-symbols-outlined">person_add</span>
+                Adicionar
+              </button>
+              <button onclick="reiniciar()" type="button" class="button secondary">
+                <span class="material-symbols-outlined">restart_alt</span>
+                Reiniciar
+              </button>
+              <button onclick="sortear()" type="button" class="button secondary">
+                <span class="material-symbols-outlined">shuffle</span>
+                Sortear
+              </button>
             </div>
           </form>
         </section>
@@ -49,14 +60,18 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
             <div class="prizeDraw__container">
               <p id="lista-sorteio"></p>
             </div>
+            <button onclick="copiarSorteio()" type="button" class="button secondary" style="margin-top: 16px;">
+              <span class="material-symbols-outlined">content_copy</span>
+              Copiar Resultado
+            </button>
           </article>
         </section>
       </div>
     </div>
   </main>
-  <div class="background__detail">
+  <div class="background__detail"></div>
 
-    <script src="js/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

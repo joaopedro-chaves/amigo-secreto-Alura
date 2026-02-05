@@ -4,8 +4,19 @@ Este é um projeto de sorteio de amigo secreto desenvolvido em javascript. O obj
 
 Este projeto/exercício é fornecido pela Alura como parte do curso Lógica de Programação.
 
+![Imagem do projeto](img/printscreen.jpeg)
+
+## Funcionalidades
+
+- Adicionar amigos
+- Sortear amigos
+- Copiar resultado
+- Reiniciar sorteio
+- Remover amigos
+
 ## Roadmap
 
 | Adicões | Status |
 | --- | --- |
-| Mudar o visual para material design | Planejado |
+| Mudar o visual para material design | Concluído |
+| Adicionar botão de copiar resultado | Concluído |
