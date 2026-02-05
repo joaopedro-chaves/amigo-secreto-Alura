@@ -4,6 +4,8 @@ Este é um projeto de sorteio de amigo secreto desenvolvido em javascript. O obj
 
 Este projeto/exercício é fornecido pela Alura como parte do curso Lógica de Programação.
 
+[Executar](https://joaopedro-chaves.github.io/amigo-secreto-Alura/)
+
 ![Imagem do projeto](img/printscreen.jpeg)
 
 ## Funcionalidades
